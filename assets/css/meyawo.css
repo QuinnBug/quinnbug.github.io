@@ -11194,7 +11194,8 @@ p {
   }
 }
 
-.service-card:hover .body img.icon {
+/*.service-card:hover */
+.body img.icon {
   margin-top: 5px;
   width: 45px;
   margin-bottom: 15px;
