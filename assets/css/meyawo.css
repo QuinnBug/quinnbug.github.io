@@ -11221,8 +11221,8 @@ p {
     align-content: center;
     position: relative;
     overflow: hidden;
-    min-width: 35vmin;
-    min-height: 35vmin;
+    min-width: 32vmin;
+    min-height: 32vmin;
     height: 100%;
     width: 100%;
 }
