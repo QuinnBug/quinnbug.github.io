@@ -11275,8 +11275,8 @@ p {
 .portfolio-card:hover .portfolio-card-overlay {
   opacity: 1;
   visibility: visible;
-  width: 100%;
-  height: 100%;
+  width: 105%;
+  height: 105%;
   border-radius: 0;
 }
 
