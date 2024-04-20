@@ -250,6 +250,18 @@ h2 {
 
 /* Row */
 
+.row-two
+{
+    display: flex;
+		flex-wrap: wrap;
+		box-sizing: border-box;
+		align-items: stretch;
+}
+
+.row-two > .col-6 {
+			width: 50%;
+		}
+
 	.row {
 		display: flex;
 		flex-wrap: wrap;
@@ -2663,15 +2675,18 @@ h2 {
 			opacity: 0.25;
 		}
 
-/* Features */
 
-.img-repsonsive
+.img-responsive
 {
     vertical-align: middle;
     object-fit: cover;
     display:block;
     position: relative;
     overflow: hidden;
+    height: 35vh;
+    width: auto;
+    padding: 0.5%;
+/*    border: solid 1px red;*/
 }
 
 .img-responsive img
@@ -2681,17 +2696,64 @@ h2 {
     height: 100%;
 }
 
-	.features article {
-		border-top: solid 3px #f4f4f4;
-		margin-bottom: 2.25em;
-		padding-top: 2.25em;
-        margin-right: 3vw;
-        margin-left: 3vw;
-	}
+.img-responsive .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    background-image: -webkit-linear-gradient(bottom, #e1dfed 0%, rgba(225, 223, 237, 0.8) 99%, rgba(225, 223, 237, 0.95) 100%);
+    background-image: linear-gradient(to top, #e1dfed 0%, rgba(225, 223, 237, 0.8) 99%, rgba(225, 223, 237, 0.95) 100%);
+    -webkit-transition: all, 0.3s;
+    transition: all, 0.3s;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    overflow: hidden;
+}
 
-    .features article:first-child {
-        border-top: 0;
-        padding-top: 0;
+.img-responsive:hover .overlay {
+  opacity: 1;
+  visibility: visible;
+  height: 90%;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.img-responsive .overlay .caption
+{
+    display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.img-responsive .overlay b
+{
+    color: #777;
+    font-size: 1.2em;
+}
+
+/* Features */
+.features article {
+    border-top: solid 3px #f4f4f4;
+    margin-bottom: 2.25em;
+    padding-top: 2.25em;
+    margin-right: 3vw;
+    margin-left: 3vw;
+}
+
+.features article:first-child {
+    border-top: 0;
+    padding-top: 0;
 }
 
 .features article .inner .image {
