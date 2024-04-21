@@ -2765,6 +2765,7 @@ h2 {
     display:block;
     position: relative;
     overflow: hidden;
+        border-radius: 0px;
 }
 
 .features article .inner .image img {
@@ -2772,6 +2773,7 @@ h2 {
 
     width: 100% ;
     height: 100%;
+        border-radius: 0px;
     }
 
 .features article .video {
@@ -2802,10 +2804,8 @@ h2 {
 .features article p {
     padding-left: 10%;
     width: 90%;
-    text-align: left;
+    text-align: center;
 }
-
-
 
 /*
 .features article .inner .image:hover {
@@ -2826,6 +2826,7 @@ h2 {
         vertical-align: middle;
         
         width: 50%;
+        border-radius: 0px;
     }
 
     .features article .inner > :last-child {
@@ -2888,8 +2889,9 @@ h2 {
 
 			#header > header .avatar {
 				display: block;
-				margin: 0 auto 2.25em auto;
-				width: 8em;
+				margin: 0 auto 0 auto;
+				width: 90%;
+                align-content: center;
 			}
 
 			#header > header h1 {
