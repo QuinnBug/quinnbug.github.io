@@ -11127,9 +11127,11 @@ p {
   margin-bottom: 4rem !important;
 }
 
+/*
 .img-responsive {
     width: 100% !important;
 }
+*/
 
 .rounded {
   border-radius: 4px;
@@ -11153,7 +11155,7 @@ p {
 
 .service-card {
   position: relative;
-  min-height: 230px;
+  min-height: 50px;
   border: 1px solid #dee2e6;
   overflow: hidden;
   border-radius: 3px;
@@ -11169,12 +11171,15 @@ p {
     height: 100%;
 }
 
-.service-card .body img.icon {
-  margin-top: 40px;
-  width: 55px;
-  margin-bottom: 25px;
-  -webkit-transition: all, 0.3s;
-  transition: all, 0.3s;
+.service-card .body img {
+    vertical-align: middle;
+    object-fit: cover;
+    display:block;
+    position: relative;
+    overflow:hidden;
+    height: auto;
+    width: 100%;
+    padding: 0.5%;
 }
 
 @media (prefers-reduced-motion: reduce) {
