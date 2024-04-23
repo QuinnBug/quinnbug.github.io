@@ -11102,6 +11102,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Baloo Paaji', cursive;
 }
 
+/*
 p {
   font-size: calc(13px + (15 - 13) * ((100vw - 300px) / (1300 - 300)));
   font-weight: 100;
@@ -11109,6 +11110,7 @@ p {
   color: #111;
   letter-spacing: .6px;
 }
+*/
 
 .xs-font {
   font-size: 13px;
@@ -12018,6 +12020,7 @@ pre .code {
   font-size: 14px;
 }
 
+/*
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12031,7 +12034,7 @@ pre .code {
           align-items: center;
 }
 
-.footer p,
+ .footer p ,
 .footer .social-links {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -12042,7 +12045,7 @@ pre .code {
           flex-basis: 0;
 }
 
-.footer a, .footer p {
+.footer a,  .footer p  {
   color: #393e46;
   padding: 4px 0;
   display: inline-block;
@@ -12090,6 +12093,8 @@ pre .code {
     margin-top: 15px;
   }
 }
+*/
+/*
 
 .header {
     position: relative;
@@ -12111,11 +12116,12 @@ pre .code {
           -ms-flex-pack: center;
               justify-content: center;
     
-    /*  background-image: url(../imgs/header.jpg);*/
+      background-image: url(../imgs/header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
+*/
 
 .overlay {
     position: absolute;
