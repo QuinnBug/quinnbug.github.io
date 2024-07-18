@@ -11102,6 +11102,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Baloo Paaji', cursive;
 }
 
+/*
 p {
   font-size: calc(13px + (15 - 13) * ((100vw - 300px) / (1300 - 300)));
   font-weight: 100;
@@ -11109,6 +11110,7 @@ p {
   color: #111;
   letter-spacing: .6px;
 }
+*/
 
 .xs-font {
   font-size: 13px;
@@ -11127,9 +11129,11 @@ p {
   margin-bottom: 4rem !important;
 }
 
+/*
 .img-responsive {
     width: 100% !important;
 }
+*/
 
 .rounded {
   border-radius: 4px;
@@ -11153,7 +11157,7 @@ p {
 
 .service-card {
   position: relative;
-  min-height: 230px;
+  min-height: 50px;
   border: 1px solid #dee2e6;
   overflow: hidden;
   border-radius: 3px;
@@ -11169,12 +11173,15 @@ p {
     height: 100%;
 }
 
-.service-card .body img.icon {
-  margin-top: 40px;
-  width: 55px;
-  margin-bottom: 25px;
-  -webkit-transition: all, 0.3s;
-  transition: all, 0.3s;
+.service-card .body img {
+    vertical-align: middle;
+    object-fit: cover;
+    display:block;
+    position: relative;
+    overflow:hidden;
+    height: auto;
+    width: 100%;
+    padding: 0.5%;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -12013,6 +12020,7 @@ pre .code {
   font-size: 14px;
 }
 
+/*
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12026,7 +12034,7 @@ pre .code {
           align-items: center;
 }
 
-.footer p,
+ .footer p ,
 .footer .social-links {
   -webkit-box-flex: 1;
   -webkit-flex-grow: 1;
@@ -12037,7 +12045,7 @@ pre .code {
           flex-basis: 0;
 }
 
-.footer a, .footer p {
+.footer a,  .footer p  {
   color: #393e46;
   padding: 4px 0;
   display: inline-block;
@@ -12085,6 +12093,8 @@ pre .code {
     margin-top: 15px;
   }
 }
+*/
+/*
 
 .header {
     position: relative;
@@ -12106,11 +12116,12 @@ pre .code {
           -ms-flex-pack: center;
               justify-content: center;
     
-    /*  background-image: url(../imgs/header.jpg);*/
+      background-image: url(../imgs/header.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
+*/
 
 .overlay {
     position: absolute;
